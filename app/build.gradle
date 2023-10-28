@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.auth0.bank0"
+        minSdkVersion 19
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+//    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':guardian')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.6.1'
+    //GSON
+    implementation 'com.google.code.gson:gson:2.8.9'
+    //FCM
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-messaging:23.0.8'
+
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+    //ZXing QR decoder deps
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.github.kittinunf.fuel:fuel:2.3.1'
+    implementation 'com.beust:klaxon:5.5'
+
+    testImplementation 'junit:junit:4.13.2'
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'org.jetbrains.kotlin.android'

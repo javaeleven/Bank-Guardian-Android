@@ -1,0 +1,4 @@
+rootProject.name = 'Bank0'
+
+include ':app'
+include ':guardian'

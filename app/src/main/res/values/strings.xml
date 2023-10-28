@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Bank0 Demo App</string>
+    <string name="title_main">Bank0</string>
+    <string name="title_enroll">Enroll account</string>
+    <string name="title_notification">Approval Request</string>
+    <string name="progress_title_please_wait">Please wait</string>
+    <string name="progress_message_unenroll">Trying to unenroll your account…</string>
+    <string name="progress_message_reject">Trying to reject the authentication request…</string>
+    <string name="progress_message_allow">Trying to allow the authentication request…</string>
+    <string name="progress_message_enroll">Trying to enroll your account…</string>
+    <string name="alert_title_error">Error</string>
+    <string name="alert_message_fcm_error">Could not obtain FCM token.\nCheck your FCM configuration and internet connection and try again later</string>
+    <string name="guardian_notification_title">Guardian notification received</string>
+    <string name="guardian_notification_text">Click to see details</string>
+
+    <string-array name="bank_accounts_array">
+        <item>ES0401283152616429369918</item>
+        <item>CH5189144793454573985</item>
+        <item>GB53BARC20037871882362</item>
+        <item>UA284535799278595174416694945</item>
+    </string-array>
+</resources>
